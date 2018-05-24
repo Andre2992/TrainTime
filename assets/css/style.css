@@ -1,0 +1,8 @@
+h1{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.jumbotron , .jumbotron-fluid{
+    background-color: chocolate;
+}

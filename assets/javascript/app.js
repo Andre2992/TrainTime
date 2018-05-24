@@ -12,3 +12,30 @@
 // Assign the reference to the database to a variable named 'database'
 // var database = ...
 var database = firebase.database();
+
+// Initial Values
+var trainName = "";
+var dest = "";
+var freq = "";
+var next = "";
+var min;
+
+$('#trainBtn').on("click", function (event) {//after submit push values to server
+    var trainName = $('#name').val().trim();
+    var dest = $('#dest').val().trim();
+    var freq = $('#freq').val().trim();
+    var next = $('#next').val().trim();
+    var first = $('#first').val().trim();
+    console.log('#trainBtn');
+});
+
+
+// Code for handling the push
+database.ref().push({
+    "trainName": name,
+    "dest": dest,
+    "freq": freq,
+    "next": next,
+    "first": first,
+    "dateAdded": firebase.database.ServerValue.TIMESTAMP
+});
