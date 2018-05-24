@@ -17,25 +17,22 @@ var database = firebase.database();
 var trainName = "";
 var dest = "";
 var freq = "";
-var next = "";
-var min;
+var first = "";
 
 $('#trainBtn').on("click", function (event) {//after submit push values to server
     var trainName = $('#name').val().trim();
     var dest = $('#dest').val().trim();
     var freq = $('#freq').val().trim();
-    var next = $('#next').val().trim();
     var first = $('#first').val().trim();
-    console.log('#trainBtn');
+    //console.log('#trainBtn');
 });
 
 
 // Code for handling the push
 database.ref().push({
-    "trainName": name,
+    "trainName": trainName,
     "dest": dest,
     "freq": freq,
-    "next": next,
     "first": first,
     "dateAdded": firebase.database.ServerValue.TIMESTAMP
 });
