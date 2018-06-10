@@ -11,7 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/javascript/app.js">
+
     <title>Train Time</title>
+
+    <!-- Moment.js Reference -->
+  <script src="http://momentjs.com/downloads/moment.js"></script>   
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -55,20 +60,20 @@
                             <div class="form-group">
                                 <div class="form-group row">
                                     <label for="">Train Name</label>
-                                    <input type="text" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Train Name">
+                                    <input type="text" class="form-control" name="" id="trainName" aria-describedby="helpId" placeholder="Train Name">
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="">Destination</label>
-                                    <input type="text" class="form-control" name="" id="dest" aria-describedby="helpId" placeholder="Destination">
+                                    <input type="text" class="form-control" name="" id="destination" aria-describedby="helpId" placeholder="Destination">
                                 </div>
                                 <div class="form-group row">
                                     <label for="">First Train Time (HH:mm - Military Time)</label>
-                                    <input type="text" class="form-control" name="" id="first" aria-describedby="helpId" placeholder="First Train Time">
+                                    <input type="text" class="form-control" name="" id="firstTrain" aria-describedby="helpId" placeholder="First Train Time">
                                 </div>
                                 <div class="form-group row">
                                     <label for="">Frequency (min)</label>
-                                    <input type="text" class="form-control" name="" id="freq" aria-describedby="helpId" placeholder="Frequency">
+                                    <input type="text" class="form-control" name="" id="frequency" aria-describedby="helpId" placeholder="Frequency">
                                 </div>
                                 <button type="submit" id="trainBtn" class="btn btn-outline-dark">Add Train</button>
 
